@@ -16,7 +16,8 @@ import React from "react"
 import {SafeAreaView, TExt} from "react-native" //{사용할 컴포넌트 추가}
 export default function App(){  //모바일 애플리케이션 실행 함수
     return(
-        <SafeAreaView><Text>Hello world!</Text></SafeAreaView>
+        <SafeAreaView><Text>Hello world!</Text></SafeAreaView>  
+        //const message= <SafeAreaView><Text>Hello world!</Text></SafeAreaView> 으로 수정 가능
     );
 }
 ```

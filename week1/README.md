@@ -1,5 +1,3 @@
-# week1
-
 ## hello 디렉토리 자동으로 생성, 개발에 필요한 파일 다운
 ```
 npx react-native init hello --template react-native-template-typescript

@@ -4,8 +4,7 @@
 ```
 npx react-native init hello --template react-native-template-typescript
 ```
-
-
+  
 ## hello 폴더를 새로운 vscode 창 열기
 ```
 code hello

@@ -47,3 +47,35 @@ onEndEdigint: 텍스트 입력이 끝났는지 여부
     + 바깥쪽 중괄호: JSX 구문 안에 Javascript 구문을 넣기 위해
     + 안쪽 중괄호: Javascript 형태의 객체를 의미
 
+* StyleSheet API
+```
+const style = StyleSheet.create({
+    [키 이름]: [스타일 객체],
+    ...
+});
+```
+* 하나의 요소에 둘 이상의 스타일 지정
+    + []를 이용하여 배열로 묶는다
+```
+<Text style={[style.label, style.nameLabel]}/>
+```
+
+* 각 요소 위치 지정하기
+```
+position:"absolute" //원하는 위치에 배치
+top, bottom, left, right // 각 면으로부터 얼마나 떨어뜨릴지
+width, height //너비, 높이 조정
+color //글씨 색깔
+backgroundColor //배경 색깔
+borderWidth //박스 둘레 선 두께
+```
+
+* 스마트폰 화면 크기에 맞게 위치 결정
+```
+// import에 Dimensions 넣어야 함
+const {width, height} = Dimensions.get("window);
+const style = StyleSheet.create({
+    width: width*0.1,
+    height: height*0.3
+})
+```

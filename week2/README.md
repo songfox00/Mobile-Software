@@ -44,6 +44,6 @@ onEndEdigint: 텍스트 입력이 끝났는지 여부
 }}>
 ```
 * 중괄호를 2개 넣는 이유
-+ 바깥쪽 중괄호: JSX 구문 안에 Javascript 구문을 넣기 위해
-+ 안쪽 중괄호: Javascript 형태의 객체를 의미
+    + 바깥쪽 중괄호: JSX 구문 안에 Javascript 구문을 넣기 위해
+    + 안쪽 중괄호: Javascript 형태의 객체를 의미
 

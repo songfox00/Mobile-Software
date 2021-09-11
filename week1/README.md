@@ -9,7 +9,7 @@ code hello
 ``` 
 
 ## 기본 구조
-```
+```JSX
 import React from "react"
 import {SafeAreaView, TExt} from "react-native" //{사용할 컴포넌트 추가}
 export default function App(){  //모바일 애플리케이션 실행 함수
@@ -21,7 +21,7 @@ export default function App(){  //모바일 애플리케이션 실행 함수
 ```
 
 ## 문제열에 변수 연결하려면 변수명을 {}로 감싼다.
-```
+```JSX
 const text=<Text>Hello world!</Text>
 const text2=[<Text>Hello</Text>, <Text>world</Text>];   //문자열의 배열
 const message=<SafeAreaView>{text}</SafeAreaView>
@@ -40,7 +40,7 @@ const message=<SafeAreaView>{text}</SafeAreaView>
 ```
 
 ## 함수 정의 및 인수 넘기기
-```
+```JSX
 function foo (){
     console.log();
 }
@@ -56,7 +56,7 @@ console.log(func("hello",...));  //hello 출력
 ```
 
 ## 화살표 함수
-```
+```JSX
 const foo=()=>{
     console.log("hello");
 }

@@ -1,10 +1,10 @@
 ## Button
-```
+```JSX
 <Button title="[버튼에 쓸 텍스트]" OnPress={[버튼 클릭시 수행할 함수]}/>
 ```
 
 ## Alert
-```
+```JSX
 Alert.alert("[알림 타이틀]", "[알림 내용]");
 
 //버튼 2개 생성
@@ -36,8 +36,8 @@ onEndEdigint: 텍스트 입력이 끝났는지 여부
 
 ## Style 속성
 * Component에 style 속성 부여하기
-```
-<[컴포넌트 이름] style={{[각종 스타일 객체 값]}}>
+```JSX
+//<[컴포넌트 이름] style={{[각종 스타일 객체 값]}}>
 <SafeAreaView style={{
     flex:1,
     backgroundColor:"blue"
@@ -48,7 +48,7 @@ onEndEdigint: 텍스트 입력이 끝났는지 여부
     + 안쪽 중괄호: Javascript 형태의 객체를 의미
 
 * StyleSheet API
-```
+```JSX
 const style = StyleSheet.create({
     [키 이름]: [스타일 객체],
     ...
@@ -56,7 +56,7 @@ const style = StyleSheet.create({
 ```
 * 하나의 요소에 둘 이상의 스타일 지정
     + []를 이용하여 배열로 묶는다
-```
+```JSX
 <Text style={[style.label, style.nameLabel]}/>
 ```
 
@@ -71,7 +71,7 @@ borderWidth //박스 둘레 선 두께
 ```
 
 * 스마트폰 화면 크기에 맞게 위치 결정
-```
+```JSX
 // import에 Dimensions 넣어야 함
 const {width, height} = Dimensions.get("window);
 const style = StyleSheet.create({

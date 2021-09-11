@@ -40,3 +40,28 @@ const message=<SafeAreaView>{text}</SafeAreaView>
 >> touch info.ts createPerson.ts
 >> code info.ts createPerson.ts
 ```
+
+## 함수 정의 및 인수 넘기기
+```
+function foo (){
+    console.log();
+}
+
+const func = function(text:string, ...){
+    console.log();
+    return text;    //반환
+}
+
+foo();
+func("hello",...);  //함수 실행
+console.log(func("hello",...));  //hello 출력
+```
+
+## 화살표 함수
+```
+const foo=()=>{
+    console.log("hello");
+}
+
+const sum=(a:number, b:number)=>a+b;    //반환값이 간단할 때
+```
